@@ -13,6 +13,7 @@ Module VariablesAndDataTypesAndTypes
         Dim money As Decimal 'assigns money as a variable
         Dim jellyBeans As Integer 'assigns jelly beans as a variable
         Dim studentName As String 'assigns student name as a variable
+        Dim userInput As String
 
         Console.WriteLine(jellyBeans) 'writes it to console
 
@@ -37,7 +38,11 @@ Module VariablesAndDataTypesAndTypes
 
         jellyBeans = CInt(studentName)
 
-        Console.WriteLine()
+        Console.WriteLine("Please enter a fruit")
+        userInput = Console.ReadLine()
+
+        'Console.WriteLine("You entered " & userInput & "!" & "A marvelous choice sir")
+        Console.WriteLine($"You entered {userInput}!")
 
     End Sub
 
